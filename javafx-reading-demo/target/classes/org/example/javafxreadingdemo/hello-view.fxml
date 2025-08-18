@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.javafxreadingdemo.HelloController">
+    <children>
+        <VBox alignment="CENTER" spacing="15.0" fillWidth="false" layoutX="50" layoutY="50">
+            <TextField text="TextField"/>
+            <Label text="Label" fx:id="welcomeText"/>
+            <HBox spacing="15.0" alignment="CENTER">
+                <Button text="Button 1" onAction="#onButton1Click"/>
+                <Button text="Button 2" onAction="#onButton2Click"/>
+                <Button fx:id="confirmBtn" text="Button 3" onAction="#handleConfirm"/>
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>
